@@ -1,0 +1,60 @@
+---
+title: "Computational Approaches to Cognition in Social Interaction"
+bibliography: library.bib
+csl: apa6.csl
+document-params: "10pt, letterpaper"
+
+author-information: > 
+    \author{{\large \bf Maarten Speekenbrink (m.speekenbrink@ucl.ac.uk)} \\ Department of Experimental Psychology, University College London 
+    \AND {\large \bf Joseph M Barnby (Joseph.Barnby@rhul.ac.uk} \\  Department of Psychology Social and Affective Processes, Royal Holloway, University of London
+    \AND {\large \bf Ismail Guennouni (i.guennouni.17@ucl.ac.uk)} \\ Department of Experimental Psychology, University College London }
+
+    
+keywords: >
+    Computational Modelling; Social interaction
+    
+output: cogsci2016::cogsci_paper
+final-submission: \cogscifinalcopy
+---
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.width=3, fig.height=3, fig.crop = F, 
+                      fig.pos = "tb", fig.path='figs/',
+                      echo=F, warning=F, cache=F, 
+                      message=F, sanitize = T)
+```
+
+```{r, libraries}
+library(png)
+library(grid)
+library(ggplot2)
+library(xtable)
+```
+
+# Introduction
+
+Traditional cognitive computational models, which are often derived from individual-oriented experiments, are limited in their ability to capture the complexity of human cognition in social settings. These models focus on isolating individual cognitive functions and predicting how they operate in isolation. However, human behaviour is inherently social and interactive, and many cognitive processes in this setting are influenced by factors that emerge specifically through interaction with others.
+
+First, our own behaviour is shaped by the actions and mental state of others. Yet, the other individuals' motives, emotions, and intentions remain largely unobservable and thus, unpredictable. This uncertainty profoundly impacts our decision-making, as our actions are contingent not only on our own internal states but also on our ability to infer other’s mental state and their responses. Further, our actions depend not only on our own mental state but also on our beliefs about who we are interacting with which can be prone to many biases. Dysfunctions in this inference process has been linked to the emergence of mental health disorders [@luyten2020mentalizing; @barnby2023formalising].
+
+Even when we make precise inferences about the other’s mental state, we face the difficulty of keeping an accurate model of the interaction partner. In social settings, there is a path dependence, in which agents learn about others and best respond to the history of the interaction. This can create feedback cycles that profoundly impact and alter the group’s behaviour at a larger scale. These difficulties are compounded by the fact that social rewards in this context are inherently dynamic and context-dependent, making them challenging to parametrize in traditional models [@feldmanhall2021computational]. Additionally, when these interactions occur among a diverse group within a population, characterized by varying cognitive characteristics or objectives, it becomes challenging to extend cognitive models from individual to collective levels [@johnson2009simply].
+
+To address these challenges, there is a growing consensus on the need for computational models that are not only mathematically tractable but also psychologically plausible, offering insights that are both scientifically robust and socially relevant. Such models should not only encapsulate the complexities of individual cognitive processes but also the intricacies of social interactions and relationships: This involves constructing models that can handle the unpredictable nature of social interactions, the contextual variability of social rewards, and the interdependencies that characterize human relationships [@feldmanhall2021computational].
+
+This symposium aims to bring together researchers and thinkers in the field to explore these challenges and opportunities. Through a combination of theoretical insights and empirical findings, we aim to chart a course for future research that can more accurately model and understand the complexities of social interaction cognition. By bridging the gap between computational models and the richness of human social interactions, we hope to contribute to a better understanding of how we navigate, interpret, and engage with our social world.
+
+
+# Speaker Biographies & Talks
+
+
+
+# References 
+
+```{r}
+# References will be generated automatically by Pandoc and included here.
+# The following code is some latex to format the bibliography. Do not remove it.
+```
+
+\setlength{\parindent}{-0.1in} 
+\setlength{\leftskip}{0.125in}
+\noindent

@@ -1,0 +1,172 @@
+% Template for Cogsci submission with R Markdown
+
+% Stuff changed from original Markdown PLOS Template
+\documentclass[10pt, letterpaper]{article}
+
+\usepackage{cogsci}
+\usepackage{pslatex}
+\usepackage{float}
+\usepackage{caption}
+
+% amsmath package, useful for mathematical formulas
+\usepackage{amsmath}
+
+% amssymb package, useful for mathematical symbols
+\usepackage{amssymb}
+
+% hyperref package, useful for hyperlinks
+\usepackage{hyperref}
+
+% graphicx package, useful for including eps and pdf graphics
+% include graphics with the command \includegraphics
+\usepackage{graphicx}
+
+% Sweave(-like)
+\usepackage{fancyvrb}
+\DefineVerbatimEnvironment{Sinput}{Verbatim}{fontshape=sl}
+\DefineVerbatimEnvironment{Soutput}{Verbatim}{}
+\DefineVerbatimEnvironment{Scode}{Verbatim}{fontshape=sl}
+\newenvironment{Schunk}{}{}
+\DefineVerbatimEnvironment{Code}{Verbatim}{}
+\DefineVerbatimEnvironment{CodeInput}{Verbatim}{fontshape=sl}
+\DefineVerbatimEnvironment{CodeOutput}{Verbatim}{}
+\newenvironment{CodeChunk}{}{}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{apacite}
+
+% KM added 1/4/18 to allow control of blind submission
+\cogscifinalcopy
+
+\usepackage{color}
+
+% Use doublespacing - comment out for single spacing
+%\usepackage{setspace}
+%\doublespacing
+
+
+% % Text layout
+% \topmargin 0.0cm
+% \oddsidemargin 0.5cm
+% \evensidemargin 0.5cm
+% \textwidth 16cm
+% \textheight 21cm
+
+\title{Computational Approaches to Cognition in Social Interaction}
+
+
+\author{{\large \bf Maarten Speekenbrink (m.speekenbrink@ucl.ac.uk)} \\ Department of Experimental Psychology, University College London  \AND {\large \bf Joseph M Barnby (Joseph.Barnby@rhul.ac.uk} \\  Department of Psychology Social and Affective Processes, Royal Holloway, University of London \AND {\large \bf Ismail Guennouni (i.guennouni.17@ucl.ac.uk)} \\ Department of Experimental Psychology, University College London }
+
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{CSLReferences}%
+  {}%
+  {\par}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+
+\textbf{Keywords:}
+Computational Modelling; Social interaction
+\end{abstract}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+Traditional cognitive computational models, which are often derived from
+individual-oriented experiments, are limited in their ability to capture
+the complexity of human cognition in social settings. These models focus
+on isolating individual cognitive functions and predicting how they
+operate in isolation. However, human behaviour is inherently social and
+interactive, and many cognitive processes in this setting are influenced
+by factors that emerge specifically through interaction with others.
+
+First, our own behaviour is shaped by the actions and mental state of
+others. Yet, the other individuals' motives, emotions, and intentions
+remain largely unobservable and thus, unpredictable. This uncertainty
+profoundly impacts our decision-making, as our actions are contingent
+not only on our own internal states but also on our ability to infer
+other's mental state and their responses. Further, our actions depend
+not only on our own mental state but also on our beliefs about who we
+are interacting with which can be prone to many biases. Dysfunctions in
+this inference process has been linked to the emergence of mental health
+disorders (Barnby, Dayan, \& Bell, 2023; Luyten, Campbell, Allison, \&
+Fonagy, 2020).
+
+Even when we make precise inferences about the other's mental state, we
+face the difficulty of keeping an accurate model of the interaction
+partner. In social settings, there is a path dependence, in which agents
+learn about others and best respond to the history of the interaction.
+This can create feedback cycles that profoundly impact and alter the
+group's behaviour at a larger scale. These difficulties are compounded
+by the fact that social rewards in this context are inherently dynamic
+and context-dependent, making them challenging to parametrize in
+traditional models (FeldmanHall \& Nassar, 2021). Additionally, when
+these interactions occur among a diverse group within a population,
+characterized by varying cognitive characteristics or objectives, it
+becomes challenging to extend cognitive models from individual to
+collective levels (Johnson, 2009).
+
+To address these challenges, there is a growing consensus on the need
+for computational models that are not only mathematically tractable but
+also psychologically plausible, offering insights that are both
+scientifically robust and socially relevant. Such models should not only
+encapsulate the complexities of individual cognitive processes but also
+the intricacies of social interactions and relationships: This involves
+constructing models that can handle the unpredictable nature of social
+interactions, the contextual variability of social rewards, and the
+interdependencies that characterize human relationships (FeldmanHall \&
+Nassar, 2021).
+
+This symposium aims to bring together researchers and thinkers in the
+field to explore these challenges and opportunities. Through a
+combination of theoretical insights and empirical findings, we aim to
+chart a course for future research that can more accurately model and
+understand the complexities of social interaction cognition. By bridging
+the gap between computational models and the richness of human social
+interactions, we hope to contribute to a better understanding of how we
+navigate, interpret, and engage with our social world.
+
+\hypertarget{speaker-biographies-talks}{%
+\section{Speaker Biographies \& Talks}\label{speaker-biographies-talks}}
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\setlength{\parindent}{-0.1in} 
+\setlength{\leftskip}{0.125in}
+
+\noindent
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-barnby2023formalising}{}}%
+Barnby, J. M., Dayan, P., \& Bell, V. (2023). Formalising social
+representation to explain psychiatric symptoms. \emph{Trends in
+Cognitive Sciences}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-feldmanhall2021computational}{}}%
+FeldmanHall, O., \& Nassar, M. R. (2021). The computational challenge of
+social learning. \emph{Trends in Cognitive Sciences}, \emph{25}(12),
+1045--1057.
+
+\leavevmode\vadjust pre{\hypertarget{ref-johnson2009simply}{}}%
+Johnson, N. (2009). \emph{Simply complexity: A clear guide to complexity
+theory}. Simon; Schuster.
+
+\leavevmode\vadjust pre{\hypertarget{ref-luyten2020mentalizing}{}}%
+Luyten, P., Campbell, C., Allison, E., \& Fonagy, P. (2020). The
+mentalizing approach to psychopathology: State of the art and future
+directions. \emph{Annual Review of Clinical Psychology}, \emph{16},
+297--325.
+
+\end{CSLReferences}
+
+\bibliographystyle{apacite}
+
+
+\end{document}
