@@ -1,13 +1,13 @@
 ---
-title: "Computational Approaches to Cognition in Social Interaction"
+title: "Computational Social Cognition: Approaches and challenges"
 bibliography: library.bib
 csl: apa6.csl
 document-params: "10pt, letterpaper"
 
 author-information: > 
-    \author{{\large \bf Maarten Speekenbrink (m.speekenbrink@ucl.ac.uk)} \\ Department of Experimental Psychology, University College London 
-    \AND {\large \bf Joseph M Barnby (Joseph.Barnby@rhul.ac.uk} \\  Department of Psychology Social and Affective Processes, Royal Holloway, University of London
-    \AND {\large \bf Ismail Guennouni (i.guennouni.17@ucl.ac.uk)} \\ Department of Experimental Psychology, University College London }
+    \author{{\large \bf Ismail Guennouni (i.guennouni.17@ucl.ac.uk)} \\ Department of Experimental Psychology, University College London
+    \AND {\large \bf Joseph M Barnby (joseph.barnby@rhul.ac.uk} \\  Department of Psychology Social and Affective Processes, Royal Holloway, University of London
+    \AND {\large \bf Maarten Speekenbrink (m.speekenbrink@ucl.ac.uk)} \\ Department of Experimental Psychology, University College London }
 
     
 keywords: >
@@ -44,9 +44,45 @@ To address these challenges, there is a growing consensus on the need for comput
 This symposium aims to bring together researchers and thinkers in the field to explore these challenges and opportunities. Through a combination of theoretical insights and empirical findings, we aim to chart a course for future research that can more accurately model and understand the complexities of social interaction cognition. By bridging the gap between computational models and the richness of human social interactions, we hope to contribute to a better understanding of how we navigate, interpret, and engage with our social world.
 
 
-# Speaker Biographies & Talks
+# Contributors
+
+**Joseph Barnby** is a computational and cognitive neuroscientist, and Assistant Professor at Royal Holloway, University of London. He received his BSc at the University of Leicester in Psychology and Neuroscience, his MSc in Clinical Mental Health from UCL, and his PhD in Cognitive Neuroscience from KCL. His lab -- the Social Computation and Representation Lab -- is interested in the brain basis of social interaction, using and developing computational models imbued with Theory of Mind to provide novel theoretical frameworks and empirical evidence to inform the aetiology of psychiatric disorder, and to develop more dynamic artificial systems.
+
+**Ismail Guennouni** is a computational cognitive scientist and Postdoctoral Researcher at the University of Heidelberg and University of Mannheim. He received his PhD in ... from UCL.
+
+**Julian Jara-Ettinger** is an associate professor of psychology at Yale University, with affiliations to the Computer Science department, the Cognitive Science program, and the Wu Tsai institute. Julian received his bachelor's degree in physics and mathematics at the Universidad Michoacana in Mexico and his PhD in Cognitive Science at MIT. At Yale, Julian's research group--the computational social cognition lab--aims to characterize the representations and computations that support human social cognition, understand how they emerge and develop, and use them to build more human-like machine social intelligence.
 
 
+**Maarten Speekenbrink** is Professor of Mathematical Psychology at UCL. His research combines computational models and behavioural experiments to identify core elements of human learning and decision making. In recent work, he focuses on how these processes operate in social interactions with other agents.
+
+# Between prudence and paranoia: the neural and computational basis of strategic mentalising gone right and wrong
+\begin{center}
+Joseph Barnby
+\end{center}
+
+Strategic reasoning is essential to avoid deception. Too much vigilance can however lead to false beliefs about a partner’s intended harm. This talk will focus on recent work developing mathematical models of how humans build recursive maps of their social partners for strategic interaction, testing which neurochemical and social factors cause this ability to go awry, and how this may explain psychopathological symptoms. Making small mis-calibrated changes to the way in which artificial agents interact causes social interaction to break down and can account for a several psychopathological symptoms observed in the clinic. It also identifies the necessity of calibrating artificial systems to their users to ensure ingenuous behaviour is not mistaken as threat.
+
+# Title
+\begin{center}
+Ismail Guennouni
+\end{center}
+
+Abstract
+
+# Social representations as probabilistic programs
+\begin{center}
+Julian Jara-Ettinger
+\end{center}
+
+Virtually all areas of uniquely-human intelligence, from moral reasoning to language understanding, rely on social cognition. Characterizing its computational structure is therefore a central challenge in cognitive science and critical towards engineering more human-like AI. In this talk I will present a computational framework of social cognition, where agent behavior is represented hierarchically through a combination of symbolic propositional programs, with internal non-symbolic continuous representations of mental state contents. I show experimental evidence that this framework captures how people make sense of behavior, including cases with complex reward structures that are not adequately captured by previous approaches. Finally, I will also discuss some ethical questions that arise when considering the role of this technology in potential surveillance applications.
+
+# Panel discussion
+
+\begin{center}
+Maarten Speekenbrink
+\end{center}
+
+The talks will be followed by a panel discussion, introduced by Maarten Speekenbrink. He will aim to integrate insights from the four talks, and highlight future challenges and directions for the field. These will then be discussed by the panel of speakers.
 
 # References 
 
