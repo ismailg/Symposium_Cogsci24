@@ -48,7 +48,7 @@ This symposium aims to bring together researchers and thinkers in the field to e
 
 **Joseph Barnby** is a computational and cognitive neuroscientist, and Assistant Professor at Royal Holloway, University of London. He received his BSc at the University of Leicester in Psychology and Neuroscience, his MSc in Clinical Mental Health from UCL, and his PhD in Cognitive Neuroscience from KCL. His lab -- the Social Computation and Representation Lab -- is interested in the brain basis of social interaction, using and developing computational models imbued with Theory of Mind to provide novel theoretical frameworks and empirical evidence to inform the aetiology of psychiatric disorder, and to develop more dynamic artificial systems.
 
-**Ismail Guennouni** is a computational cognitive scientist and Postdoctoral Researcher at the University of Heidelberg and University of Mannheim. He received his PhD in ... from UCL.
+**Ismail Guennouni** is a computational cognitive scientist and Postdoctoral Research Fellow at the AI Health Innovation Cluster associated with the University of Heidelberg and the ZI Mannheim. He received his MSc in Cognitive Science and his PhD in Psychology from UCL with a focus on experimental and computations approaches to strategic social interaction. His research investigates the differential aspects of social learning in mental health disorders. He is interested in exploring how cognitive interventions, combined with computational modelling of behaviour can help address social learning dysfunction inherent in many mental health disorders.
 
 **Julian Jara-Ettinger** is an associate professor of psychology at Yale University, with affiliations to the Computer Science department, the Cognitive Science program, and the Wu Tsai institute. Julian received his bachelor's degree in physics and mathematics at the Universidad Michoacana in Mexico and his PhD in Cognitive Science at MIT. At Yale, Julian's research group--the computational social cognition lab--aims to characterize the representations and computations that support human social cognition, understand how they emerge and develop, and use them to build more human-like machine social intelligence.
 
@@ -62,12 +62,12 @@ Joseph Barnby
 
 Strategic reasoning is essential to avoid deception. Too much vigilance can however lead to false beliefs about a partner’s intended harm. This talk will focus on recent work developing mathematical models of how humans build recursive maps of their social partners for strategic interaction, testing which neurochemical and social factors cause this ability to go awry, and how this may explain psychopathological symptoms. Making small mis-calibrated changes to the way in which artificial agents interact causes social interaction to break down and can account for a several psychopathological symptoms observed in the clinic. It also identifies the necessity of calibrating artificial systems to their users to ensure ingenuous behaviour is not mistaken as threat.
 
-# Title
+# Hidden Markov models to capture the dynamics of strategic interaction and build adaptive human-like agents
 \begin{center}
 Ismail Guennouni
 \end{center}
 
-Abstract
+In social environments, the outcomes of our actions are influenced by the behavior of others, necessitating mutual adaptation. Static opponent models are inadequate when dealing with players who are also learning and modelling our strategies. In this talk, I will introduce a framework based on hidden Markov models, tailored to capture the evolving dynamics of interactions in repeated economic games. I will show how this approach effectively characterizes player behavior through analysis of dyadic human exchange data. I will then explore how these HMM models facilitate the development of adaptive artificial agents that can emulate human behavior in economic games, whilst offering a higher degree of experimental control. Additionally, I will demonstrate the application of these agents in intervention studies aimed at bolstering cooperative behavior in such games.
 
 # Social representations as probabilistic programs
 \begin{center}

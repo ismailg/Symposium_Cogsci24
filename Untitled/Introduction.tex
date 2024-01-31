@@ -59,38 +59,9 @@
 
 \newlength{\cslhangindent}
 \setlength{\cslhangindent}{1.5em}
-%\newenvironment{CSLReferences}%
-%  {}%
-%  {\par}
-
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{3em}
-\newlength{\cslentryspacingunit} % times entry-spacing
-\setlength{\cslentryspacingunit}{\parskip}
-
-% for Pandoc 2.8 to 2.10.1
-\newenvironment{cslreferences}%
-{}%
-{\par}
-% For Pandoc 2.11+
-\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
-{% don't indent paragraphs
-	\setlength{\parindent}{0pt}
-	% turn on hanging indent if param 1 is 1
-	\ifodd #1
-	\let\oldpar\par
-	\def\par{\hangindent=\cslhangindent\oldpar}
-	\fi
-	% set entry spacing
-	%\setlength{\parskip}{#2\cslentryspacingunit}
-}%
-{}
-\usepackage{calc}
-\newcommand{\CSLBlock}[1]{#1\hfill\break}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
-
+\newenvironment{CSLReferences}%
+  {}%
+  {\par}
 
 \begin{document}
 
@@ -175,8 +146,15 @@ evidence to inform the aetiology of psychiatric disorder, and to develop
 more dynamic artificial systems.
 
 \textbf{Ismail Guennouni} is a computational cognitive scientist and
-Postdoctoral Researcher at the University of Heidelberg and University
-of Mannheim. He received his PhD in \ldots{} from UCL.
+Postdoctoral Research Fellow at the AI Health Innovation Cluster
+associated with the University of Heidelberg and the ZI Mannheim. He
+received his MSc in Cognitive Science and his PhD in Psychology from UCL
+with a focus on experimental and computations approaches to strategic
+social interaction. His research investigates the differential aspects
+of social learning in mental health disorders. He is interested in
+exploring how cognitive interventions, combined with computational
+modelling of behaviour can help address social learning dysfunction
+inherent in many mental health disorders.
 
 \textbf{Julian Jara-Ettinger} is an associate professor of psychology at
 Yale University, with affiliations to the Computer Science department,
@@ -217,14 +195,28 @@ clinic. It also identifies the necessity of calibrating artificial
 systems to their users to ensure ingenuous behaviour is not mistaken as
 threat.
 
-\hypertarget{title}{%
-\section{Title}\label{title}}
+\hypertarget{hidden-markov-models-to-capture-the-dynamics-of-strategic-interaction-and-build-adaptive-human-like-agents}{%
+\section{Hidden Markov models to capture the dynamics of strategic
+interaction and build adaptive human-like
+agents}\label{hidden-markov-models-to-capture-the-dynamics-of-strategic-interaction-and-build-adaptive-human-like-agents}}
 
 \begin{center}
 Ismail Guennouni
 \end{center}
 
-Abstract
+In social environments, the outcomes of our actions are influenced by
+the behavior of others, necessitating mutual adaptation. Static opponent
+models are inadequate when dealing with players who are also learning
+and modelling our strategies. In this talk, I will introduce a framework
+based on hidden Markov models, tailored to capture the evolving dynamics
+of interactions in repeated economic games. I will show how this
+approach effectively characterizes player behavior through analysis of
+dyadic human exchange data. I will then explore how these HMM models
+facilitate the development of adaptive artificial agents that can
+emulate human behavior in economic games, whilst offering a higher
+degree of experimental control. Additionally, I will demonstrate the
+application of these agents in intervention studies aimed at bolstering
+cooperative behavior in such games.
 
 \hypertarget{social-representations-as-probabilistic-programs}{%
 \section{Social representations as probabilistic
