@@ -55,7 +55,7 @@
 \title{Computational Social Cognition: Approaches and challenges}
 
 
-\author{{\large \bf Ismail Guennouni (i.guennouni.17@ucl.ac.uk)} \\ Department of Experimental Psychology, University College London \AND {\large \bf Joseph M Barnby (joseph.barnby@rhul.ac.uk} \\  Department of Psychology Social and Affective Processes, Royal Holloway, University of London \AND {\large \bf Maarten Speekenbrink (m.speekenbrink@ucl.ac.uk)} \\ Department of Experimental Psychology, University College London }
+\author{{\large \bf Ismail Guennouni (ismail.guennouni@zi-mannheim.de)} Z.I Mannheim and University of Heidelberg \AND {\large \bf Joseph M Barnby (joseph.barnby@rhul.ac.uk)} Royal Holloway, University of London \AND {\large \bf Julian Jara-Ettinger (julian.jara-ettinger@yale.edu)} Yale University \AND {\large \bf Rebecca Saxe (saxe@mit.edu)} MIT \AND {\large \bf Maarten Speekenbrink (m.speekenbrink@ucl.ac.uk)} University College London}
 
 \newlength{\cslhangindent}
 \setlength{\cslhangindent}{1.5em}
@@ -96,105 +96,95 @@
 
 \maketitle
 
-\begin{abstract}
-
-
-\textbf{Keywords:}
-Computational Modelling; Social interaction
-\end{abstract}
+% \begin{abstract}
+% 
+% 
+% \textbf{Keywords:}
+% Computational Models; Social interaction; Theory of Mind
+% \end{abstract}
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-Traditional cognitive computational models, which are often derived from
-individual-oriented experiments, are limited in their ability to capture
-the complexity of human cognition in social settings. These models focus
-on isolating individual cognitive functions and predicting how they
-operate in isolation. However, human behaviour is inherently social and
-interactive, and many cognitive processes in this setting are influenced
-by factors that emerge specifically through interaction with others.
+Predicting the actions and reactions of others is crucial to successful
+social interaction. When deciding whether to bluff in a game of poker,
+we consider the chances that the other players will fold or continue to
+play and unmask our bluff. When deciding whether to tell our boss that
+their plans are likely to have adverse effects, we consider a range of
+reactions, from being grateful for our honesty to being dismissed out of
+spite. Such predictions are highly uncertain and complex, not least
+because the other's (re)actions usually result from them making equally
+complex and uncertain inferences about us. Nevertheless, we are often
+remarkably successful -- although sometimes utterly wrong -- in our
+social inferences. How do we explain these successes and failures?
 
-First, our own behaviour is shaped by the actions and mental state of
-others. Yet, the other individuals' motives, emotions, and intentions
-remain largely unobservable and thus, unpredictable. This uncertainty
-profoundly impacts our decision-making, as our actions are contingent
-not only on our own internal states but also on our ability to infer
-other's mental state and their responses. Further, our actions depend
-not only on our own mental state but also on our beliefs about who we
-are interacting with which can be prone to many biases. Dysfunctions in
-this inference process has been linked to the emergence of mental health
-disorders (Barnby, Dayan, \& Bell, 2023; Luyten, Campbell, Allison, \&
-Fonagy, 2020).
+Theory of Mind (ToM) or mentalizing, referring to the ability to
+represent another's latent mental states (e.g.~thoughts, beliefs,
+motivations, and emotions) is a central concept in theories of social
+inference (Baker, Jara-Ettinger, Saxe, \& Tenenbaum, 2017; Barnby,
+Bellucci, et al., 2023). That predictions of another's actions derive
+from inferences of such latent states is a vague --yet meaningful --
+statement. How are these inferences made? And what are the benefits of
+representing others in terms of their beliefs, motivations, and
+emotions, over and above directly predicting their (re)actions?
 
-Even when we make precise inferences about the other's mental state, we
-face the difficulty of keeping an accurate model of the interaction
-partner. In social settings, there is a path dependence, in which agents
-learn about others and best respond to the history of the interaction.
-This can create feedback cycles that profoundly impact and alter the
-group's behaviour at a larger scale. These difficulties are compounded
-by the fact that social rewards in this context are inherently dynamic
-and context-dependent, making them challenging to parametrize in
-traditional models (FeldmanHall \& Nassar, 2021). Additionally, when
-these interactions occur among a diverse group within a population,
-characterized by varying cognitive characteristics or objectives, it
-becomes challenging to extend cognitive models from individual to
-collective levels (Johnson, 2009).
+There is a growing consensus that computational models are required to
+reduce this ambiguity and improve the falsifiability of theories of
+social interaction (FeldmanHall \& Nassar, 2021). These models should be
+both mathematically tractable and psychologically plausible, offering
+insights that are scientifically robust and socially relevant. Given the
+complexities of social interactions and inference, it is unlikely that
+models which work well in non-social domains (e.g.~standard
+reinforcement learning models) can be called upon without modification.
 
-To address these challenges, there is a growing consensus on the need
-for computational models that are not only mathematically tractable but
-also psychologically plausible, offering insights that are both
-scientifically robust and socially relevant. Such models should not only
-encapsulate the complexities of individual cognitive processes but also
-the intricacies of social interactions and relationships: This involves
-constructing models that can handle the unpredictable nature of social
-interactions, the contextual variability of social rewards, and the
-interdependencies that characterize human relationships (FeldmanHall \&
-Nassar, 2021).
-
-This symposium aims to bring together researchers and thinkers in the
-field to explore these challenges and opportunities. Through a
-combination of theoretical insights and empirical findings, we aim to
-chart a course for future research that can more accurately model and
-understand the complexities of social interaction cognition. By bridging
-the gap between computational models and the richness of human social
-interactions, we hope to contribute to a better understanding of how we
-navigate, interpret, and engage with our social world.
+This symposium brings together researchers who have taken up the
+challenge of computational social cognition with a variety of
+approaches, including generative Bayesian models (Barnby, Dayan, \&
+Bell, 2023), inverse reinforcement learning (Jara-Ettinger, 2019),
+unsupervised clustering techniques (Guennouni \& Speekenbrink, 2022),
+and predictive coding (Koster-Hale \& Saxe, 2013). The aim of this
+symposium is to identify the unique challenges that face computational
+social cognition, how these are met by the different approaches, and
+what remains to be addressed in the future.
 
 \hypertarget{contributors}{%
 \section{Contributors}\label{contributors}}
 
 \textbf{Joseph Barnby} is a computational and cognitive neuroscientist,
 and Assistant Professor at Royal Holloway, University of London. He
-received his BSc at the University of Leicester in Psychology and
-Neuroscience, his MSc in Clinical Mental Health from UCL, and his PhD in
-Cognitive Neuroscience from KCL. His lab -- the Social Computation and
-Representation Lab -- is interested in the brain basis of social
-interaction, using and developing computational models imbued with
-Theory of Mind to provide novel theoretical frameworks and empirical
-evidence to inform the aetiology of psychiatric disorder, and to develop
-more dynamic artificial systems.
+received his PhD in Cognitive Neuroscience from King's College London.
+His lab -- the Social Computation and Representation Lab -- is
+interested in the brain basis of social interaction, using and
+developing computational models imbued with Theory of Mind to provide
+novel theoretical frameworks and empirical evidence to inform the
+aetiology of psychiatric disorder, and to develop more dynamic
+artificial systems.
 
 \textbf{Ismail Guennouni} is a computational cognitive scientist and
-Postdoctoral Research Fellow at the AI Health Innovation Cluster
-associated with the University of Heidelberg and the ZI Mannheim. He
-received his MSc in Cognitive Science and his PhD in Psychology from UCL
-with a focus on experimental and computations approaches to strategic
-social interaction. His research investigates the differential aspects
-of social learning in mental health disorders. He is interested in
-exploring how cognitive interventions, combined with computational
-modelling of behaviour can help address social learning dysfunction
-inherent in many mental health disorders.
+Postdoctoral Research Fellow at the AI Health Innovation Cluster He
+received his PhD in Psychology from UCL with a focus on experimental and
+computations approaches to strategic social interaction. His research
+investigates the differential aspects of social learning in mental
+health disorders. He is interested in exploring how cognitive
+interventions, combined with computational modelling of behaviour can
+help address social learning dysfunction inherent in many mental health
+disorders.
 
 \textbf{Julian Jara-Ettinger} is an associate professor of psychology at
 Yale University, with affiliations to the Computer Science department,
 the Cognitive Science program, and the Wu Tsai institute. Julian
-received his bachelor's degree in physics and mathematics at the
-Universidad Michoacana in Mexico and his PhD in Cognitive Science at
-MIT. At Yale, Julian's research group--the computational social
-cognition lab--aims to characterize the representations and computations
-that support human social cognition, understand how they emerge and
-develop, and use them to build more human-like machine social
-intelligence.
+received his PhD in Cognitive Science at MIT. At Yale, Julian's research
+group--the computational social cognition lab--aims to characterize the
+representations and computations that support human social cognition,
+understand how they emerge and develop, and use them to build more
+human-like machine social intelligence.
+
+\textbf{Rebecca Saxe} is a social cognitive neuroscientist, John W Jarve
+(1978) Professor of Cognitive Neuroscience, and Associate Dean of
+Science at MIT. She received her her PhD in Cognitive Science at MIT,
+and was a junior fellow in the Harvard Society of Fellows. Her lab
+studies the development and neural basis of human cognition, focusing on
+social cognition.
 
 \textbf{Maarten Speekenbrink} is Professor of Mathematical Psychology at
 UCL. His research combines computational models and behavioural
@@ -269,6 +259,31 @@ captured by previous approaches. Finally, I will also discuss some
 ethical questions that arise when considering the role of this
 technology in potential surveillance applications.
 
+\hypertarget{using-inverse-planning-to-learn-from-and-communicate-with-social-actions}{%
+\section{Using inverse planning to learn from and communicate with
+social
+actions}\label{using-inverse-planning-to-learn-from-and-communicate-with-social-actions}}
+
+\begin{center}
+Rebecca Saxe
+\end{center}
+
+Any social action has multiple possible explanations. For example,
+consider punishment. If an authority chooses to punish a norm violation,
+one possible explanation is that the norm violation is morally wrong,
+and the authority is impartial. Another possible explanation is that the
+norm violation is relatively innocuous, and the authority is biased
+against the target. I will present a formal cognitive model of how
+people accommodate the ambiguity of social actions, and rationally
+jointly update beliefs about the situation (i.e.~the norm violation) and
+the actor (i.e.~the authority's motives), depending on their priors.
+This model predicts when the beliefs of different people observing the
+same social interactions will rationally diverge, and fits human
+inferences across three studies (N=1260). The model of observers'
+inferences can be further embedded, recursively, in a model of planning,
+to explain how people anticipate the reputational consequences of their
+decisions and plan communicative social actions.
+
 \hypertarget{panel-discussion}{%
 \section{Panel discussion}\label{panel-discussion}}
 
@@ -289,8 +304,21 @@ then be discussed by the panel of speakers.
 
 \noindent
 
+\small
+
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-baker2017rational}{}}%
+Baker, C. L., Jara-Ettinger, J., Saxe, R., \& Tenenbaum, J. B. (2017).
+Rational quantitative attribution of beliefs, desires and percepts in
+human mentalizing. \emph{Nature Human Behaviour}, \emph{1}(4), 0064.
+
+\leavevmode\vadjust pre{\hypertarget{ref-barnby2023beyond}{}}%
+Barnby, J. M., Bellucci, G., Alon, N., Schilbach, L., Bell, V., Frith,
+C., \& Dayan, P. (2023). Beyond theory of mind: A formal framework for
+social inference and representation. \emph{PsyArXiv}.
+http://doi.org/\href{https://doi.org/10.31234/osf.io/cmgu7}{10.31234/osf.io/cmgu7}
+
 \leavevmode\vadjust pre{\hypertarget{ref-barnby2023formalising}{}}%
 Barnby, J. M., Dayan, P., \& Bell, V. (2023). Formalising social
 representation to explain psychiatric symptoms. \emph{Trends in
@@ -301,15 +329,19 @@ FeldmanHall, O., \& Nassar, M. R. (2021). The computational challenge of
 social learning. \emph{Trends in Cognitive Sciences}, \emph{25}(12),
 1045--1057.
 
-\leavevmode\vadjust pre{\hypertarget{ref-johnson2009simply}{}}%
-Johnson, N. (2009). \emph{Simply complexity: A clear guide to complexity
-theory}. Simon; Schuster.
+\leavevmode\vadjust pre{\hypertarget{ref-guennouni2022transfer}{}}%
+Guennouni, I., \& Speekenbrink, M. (2022). Transfer of learned opponent
+models in zero sum games. \emph{Computational Brain \& Behavior},
+\emph{5}(3), 326--342.
 
-\leavevmode\vadjust pre{\hypertarget{ref-luyten2020mentalizing}{}}%
-Luyten, P., Campbell, C., Allison, E., \& Fonagy, P. (2020). The
-mentalizing approach to psychopathology: State of the art and future
-directions. \emph{Annual Review of Clinical Psychology}, \emph{16},
-297--325.
+\leavevmode\vadjust pre{\hypertarget{ref-jara2019theory}{}}%
+Jara-Ettinger, J. (2019). Theory of mind as inverse reinforcement
+learning. \emph{Current Opinion in Behavioral Sciences}, \emph{29},
+105--110.
+
+\leavevmode\vadjust pre{\hypertarget{ref-koster2013theory}{}}%
+Koster-Hale, J., \& Saxe, R. (2013). Theory of mind: A neural prediction
+problem. \emph{Neuron}, \emph{79}(5), 836--848.
 
 \end{CSLReferences}
 
